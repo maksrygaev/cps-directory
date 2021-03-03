@@ -1,0 +1,29 @@
+.gradient {
+    height: 56px;
+    background: linear-gradient(270deg, #FFFFFF 10%, #F8f8f8 98%);
+    border-top: 1px solid #D9FFF5;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &.container__gradient {
+        margin-top: 16px;
+        @media (min-width: 767px) {
+            margin-top: 24px;
+        }
+        @media (min-width: 1119px) {
+            margin-top: 32px;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        color: #7E7E82;
+        font-weight: 600;
+        margin: 16px;
+        @media (min-width: $w-767) {
+            margin: 16px 24px;
+        }
+        @media (min-width: 1050px) {
+            margin: 16px 32px;
+        }
+    }
+}

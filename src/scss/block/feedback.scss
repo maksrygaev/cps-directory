@@ -1,0 +1,13 @@
+.feedback {
+    display: none;
+    &.rightside__feedback {
+        margin-top: 80px;
+        @media (min-width: 1119px) {
+            margin-top: 24px;
+        }
+    }
+}
+
+.feedback-show {
+    display: block;
+}

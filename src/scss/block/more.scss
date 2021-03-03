@@ -1,0 +1,26 @@
+.more {
+    font-weight: 600;
+    font-size: 17px;
+    &:before {
+        content: url('/img/arrow.svg');
+        margin-right: 12px;
+        display: inline-block;
+        transition: 1s;
+    }
+    &:hover {
+        color: $color-important;
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    &.rotate-arrow:before {
+        content: url('/img/arrow.svg');
+        margin-right: 10px;
+        transform: rotate(540deg);
+        display: inline-block;
+        transition: 1s;
+    }
+}
+
+.showpost {
+    display: inline-block;
+}

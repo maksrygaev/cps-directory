@@ -1,0 +1,12 @@
+ .titleline {
+     white-space: nowrap;
+     color: black;
+     @media(min-width: $w-1119) {
+         margin: 0;
+         padding: 0;
+     }
+     &:before {
+         content: url('../img/hi.svg');
+         vertical-align: middle;
+     }
+ }

@@ -1,0 +1,97 @@
+.header {
+    background-color: $color-elements;
+    width: 100%;
+    max-width: 1120px;
+    height: 88px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    @media (min-width: $w-1119) {
+        background-color: $backround-color;
+        box-shadow: none;
+        margin: 0 auto;
+    }
+    &__mobile {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 16px;
+        @media (min-width: $w-767) {
+            display: none;
+        }
+    }
+    &__mobile-left {
+        width: 155px;
+        height: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__mobile-right {
+        width: 120px;
+        height: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /*--------------------------*/
+    &__tablet {
+        display: none;
+        justify-content: space-between;
+        margin: 0 24px;
+        @media (min-width: $w-767) {
+            display: flex;
+        }
+        @media (min-width:$w-1119) {
+            display: none;
+        }
+    }
+    &__tablet-left {
+        height: 88px;
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__tablet-right {
+        height: 88px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /*----------------------------*/
+    &__desktop {
+        display: none;
+        justify-content: space-between;
+        max-width: 1050px;
+        margin: 10px 24px 0px 0;
+        font-size: 16px;
+        @media (min-width: $w-1119) {
+            display: flex;
+        }
+        @media (min-width: $w-1200) {
+            max-width: 900px;
+        }
+        @media (min-width: $w-1300) {
+            max-width: 1050px;
+        }
+    }
+    &__desktop-left {
+        height: 88px;
+        display: flex;
+        align-items: flex-end;
+        .titleline--header:before {
+            margin-right: 32px;
+        }
+    }
+    &__desktop-right {
+        height: 88px;
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        white-space: nowrap;
+        p {
+            height: 30px;
+            font-weight: 600;
+        }
+    }
+}

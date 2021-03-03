@@ -1,0 +1,87 @@
+.rightside {
+    width: 320px;
+    height: 2100px;
+    min-height: 620px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    display: none;
+    background-color: white;
+    font-weight: 600;
+    color: grey;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 15;
+    @media(min-width: 1119px) {
+        width: 440px;
+    }
+    &__close {
+        margin: 24px 16px;
+        display: block;
+        position: absolute;
+        @media(min-width: 1119px) {
+            left: -80px;
+        }
+    }
+    &__titleline {
+        &:before {
+            margin-right: 16px;
+            @media (min-width: 1119px) {
+                margin-right: 28px;
+            }
+        }
+    }
+    &__forms {
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        width: 258px;
+        font-size: 16px;
+        color: black;
+        padding: 12px 12px;
+        margin: 8px 5px;
+        resize: none;
+        @media(min-width: 1119px) {
+            width: 350px;
+            margin: 8px 22px;
+        }
+        &::placeholder {
+            color: #B5B6BC;
+        }
+        &:focus::placeholder {
+            color: transparent;
+        }
+    }
+}
+
+.show-rightside-class {
+    display: flex;
+    animation-name: shok;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    @keyframes shok {
+        from {
+            transform: translateX(320px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+}
+
+.hidden-class {
+    display: flex;
+    animation-name: closew;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    @keyframes closew {
+        from {
+            transform: translateX(0px);
+        }
+        to {
+            transform: translateX(360px);
+        }
+    }
+}
+
+.opacity-for-container {
+    opacity: 0.1;
+}

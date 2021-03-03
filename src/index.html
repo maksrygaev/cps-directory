@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type='text/css' href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>CPS</title>
+</head>
+
+<body>
+    <div class='full-container'>
+        <div class='sidebar'>
+            <div class='sidebar__wrapper'>
+                <div class='sidebar__menu'>
+                    <div class='sidebar__header'>
+                        <button class='button close-menu sidebar__buttonmenu'><img src='./img/close.svg'></button>
+                        <a href='/'><img src='./img/logo.svg' class='sidebar__logo'></a>
+                        <button class='button'><img src='./img/search.svg'></button>
+                    </div>
+                    <nav class='sidebar__list'>
+                        <ul>
+                            <li><a href='#' class='sidebar__item'>Ремонт техники</a></li>
+                            <li><a href='#' class='sidebar__item'>Услуги и сервисы</a></li>
+                            <li><a href='#' class='sidebar__item'>Корпоративным клиентам</a></li>
+                            <li><a href='#' class='sidebar__item'>Продавцам техники</a></li>
+                            <li><a href='#' class='sidebar__item'>Партнерам</a></li>
+                            <li><a href='#' class='sidebar__item'>Производителям</a></li>
+                            <li><a href='#' class='sidebar__item'>Cервисные центры</a></li>
+                            <li><a href='#' class='sidebar__item'>Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class='sidebar__footer'>
+                    <div class='sidebar__footer-container'>
+                        <div class='sidebar__footer-contact'>
+                            <button class='button call'><img src='./img/call.svg'></button>
+                            <button class='button message'><img src='./img/message.svg'></button>
+                            <button class='button'><img src='./img/contacts.svg'></button>
+                        </div>
+                        <div class='sidebar__footer-information'>
+                            <input type='email ' class='sidebar__mail' value='mail@cps.com' readonly>
+                            <input type='tel' class='sidebar__telephone' value='8 800 890 8900' readonly>
+                        </div>
+
+                        <div class='sidebar__footer-lang'>
+                            <label>
+                    <input type='radio' name='lang' value='ru' class='sidebar__check' checked>
+                    <span class='sidebar__text'>RU</span>
+                    </label>
+
+                            <label>
+                    <input type='radio' name='lang' value='en' class='sidebar__check'>
+                    <span class='sidebar__text'>EN</span>
+                    </label>
+
+                            <label>
+                    <input type='radio' name='lang' value='en' class='sidebar__check'>
+                    <span class='sidebar__text'>CH</span>
+                    </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='container'>
+            <header class='header'>
+                <div class='header__mobile'>
+                    <div class='header__mobile-left'>
+                        <button class='button open-menu'><img src='./img/menu.svg'alt='меню'></button>
+                        <a href='/' class='logo'><img src='./img/logo.svg' alt='лого'></a>
+                    </div>
+                    <div class='header__mobile-right'>
+                        <div class='diviver'><img src='./img/diviver.svg'></div>
+                        <button class='button'><img src='./img/tools.svg' alt='заявка'></button>
+                        <button class='button'><img src='./img/status.svg' alt='статус'></button>
+                    </div>
+                </div>
+
+                <div class='header__tablet'>
+                    <div class='header__tablet-left'>
+                        <button class='button open-menu'><img src='./img/menu.svg'alt='меню'></button>
+                        <div class='diviver'><img src='./img/diviver.svg'></div>
+                        <a href='/' class='logo'><img src='./img/logo.svg' alt='лого'></a>
+                    </div>
+                    <div class='header__tablet-right'>
+                        <button class="button call"><img src='./img/call.svg' alt='звонок'></button>
+                        <button class="button message"><img src='./img/message.svg' alt='сообщения'></button>
+                        <button class="button"><img src='./img/contacts.svg' alt='контакты'></button>
+                        <div class='diviver'><img src='./img/diviver.svg'></div>
+                        <button class="button"><img src='./img/tools.svg' alt='заявка'></button>
+                        <button class="button"><img src='./img/status.svg' alt='статус рмеонта'></button>
+                    </div>
+                </div>
+
+                <div class='header__desktop'>
+                    <div class='header__desktop-left'>
+                        <h1 class='titleline titleline--header'>Услуги и сервисы</h1>
+                    </div>
+                    <div class='header__desktop-right'>
+                        <p>Оставить заявку</p>
+                        <button class='button'><img src='./img/tools.svg'></button>
+                        <p>Статус ремонта</p>
+                        <button class='button'><img src='./img/status.svg'></button>
+                    </div>
+                </div>
+            </header>
+
+            <div class='wrapper'>
+                <div class='services'>
+                    <h1 class='titleline titleline--body'>Услуги и сервисы</h1>
+                    <ul class='services__container'>
+                        <li class="services__item"><a href='#'>Ремонтируемые бренды</a></li>
+                        <li class="services__item"><a href='#'>Ремонтируемые устройства</a></li>
+                        <li class="services__item"><a href='#'>Цены на услуги</a></li>
+                        <li class="services__item"><a href='#'>Адреса сервисных центров</a></li>
+                        <li class="services__item"><a href='#'>Специальные цены</a></li>
+                        <li class="services__item"><a href='#'>Отзывы</a></li>
+                    </ul>
+                </div>
+
+                <div class='post'>
+                    <div class='post__text'>
+                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p><br>
+                        <p class='post__text-tablet readmore'>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера что подтверждает большое количество постоянных клиентов.</p>
+                        <p class='post__text-desktop readmore'>Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+
+                        <button class='more post__more'>Читать далее</button>
+                    </div>
+                    <img src='./img/cps-image.png' alt='Картинка поста' class='post__image'>
+                </div>
+
+                <div class='gradient container__gradient'>
+                    <div class='gradient__title'>Ремонт различных видов брендов</div>
+                </div>
+                <div class='cardblock container__cardblock'>
+                    <div class='swiper-mobile'>
+                        <div class='swiper-container' data-mobile='false'>
+                            <div class='swiper-wrapper'>
+                                <a href='#' class="swiper-slide cardbrand">
+                                    <div><img src='./img/lenovo.svg' alt='lenovo'></div>
+                                    <div><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardbrand">
+                                    <div><img src='./img/samsung.svg' alt='lenovo'></div>
+                                    <div><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardbrand">
+                                    <div><img src='./img/ViewSonic.svg' alt='lenovo'></div>
+                                    <div><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardbrand">
+                                    <div><img src='./img/hp.svg' alt='lenovo'></div>
+                                    <div><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardbrand">
+                                    <div><img src='./img/apple.svg' alt='lenovo'></div>
+                                    <div><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardbrand">
+                                    <div><img src='./img/acer.svg' alt='lenovo'></div>
+                                    <div><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardbrand">
+                                    <div><img src='./img/bosch.svg' alt='lenovo'></div>
+                                    <div><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardbrand">
+                                    <div><img src='./img/sony.svg' alt='lenovo'></div>
+                                    <div><img src='./img/btn.svg'></div>
+                                </a>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class='cardblock__tablet'>
+                        <div class='cardblock__tablet-container'>
+                            <a href='#' class="cardbrand">
+                                <div><img src='./img/lenovo.svg' alt='lenovo'></div>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand">
+                                <div><img src='./img/samsung.svg' alt='samsung'></div>
+                                <div><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand">
+                                <div><img src='./img/apple.svg' alt='apple'></div>
+                                <div> <img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand">
+                                <div><img src='./img/bosch.svg' alt='BOSCH'></div>
+                                <div><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand">
+                                <div><img src='./img/ViewSonic.svg' alt='ViewSonic'></div>
+                                <div><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand">
+                                <div><img src='./img/sony.svg' alt='sony'></div>
+                                <div><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand visible">
+                                <div><img src='./img/hp.svg' alt='HP'></div>
+                                <div> <img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand visible">
+                                <div><img src='./img/acer.svg' alt='Acer'></div>
+                                <div><img src='./img/btn.svg'></div>
+                            </a>
+                            <a href='#' class="cardbrand visible">
+                                <div><img src='./img/samsung.svg' alt='samsung'></div>
+                                <div><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand visible">
+                                <div><img src='./img/lenovo.svg' alt='lenovo'></div>
+                                <div><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand visible">
+                                <div><img src='./img/apple.svg' alt='apple'></div>
+                                <div> <img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardbrand visible">
+                                <div><img src='./img/sony.svg' alt='Sony'></div>
+                                <div><img src='./img/btn.svg'></div>
+                            </a>
+                        </div>
+                        <button class='more cardbrand__more'>Показать все</button>
+                    </div>
+                </div>
+
+                <div class='gradient container__gradient'>
+                    <div class='gradient__title'>Ремонт различных видов техники</div>
+                </div>
+                <div class='cardblock container__cardblock'>
+                    <div class='swiper-mobile'>
+                        <div class='swiper-container' data-mobile='false'>
+                            <div class='swiper-wrapper'>
+                                <a href='#' class="swiper-slide cardtech">
+                                    <p>Ремонт планшетов</p>
+                                    <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardtech">
+                                    <p>Ремонт ноутбуков</p>
+                                    <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardtech">
+                                    <p>Ремонт компьютеров</p>
+                                    <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardtech">
+                                    <p>Ремонт смартфонов</p>
+                                    <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardtech">
+                                    <p>Ремонт стиральных машин</p>
+                                    <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardtech">
+                                    <p>Ремонт микроволновок</p>
+                                    <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardtech">
+                                    <p>Ремонт зарядных блоков</p>
+                                    <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                                </a>
+                                <a href='#' class="swiper-slide cardtech">
+                                    <p>Ремонт наушников</p>
+                                    <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                                </a>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class='cardblock__tablet'>
+                        <div class='cardblock__tablet-container'>
+                            <a href='#' class="cardtech">
+                                <p>Ремонт ПК</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech">
+                                <p>Ремонт </p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech">
+                                <p>Ремонт смартфонов</p>
+                                <div class='cardtech__btn'> <img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech">
+                                <p>Ремонт телевизоров</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech">
+                                <p>Ремонт блоков</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech">
+                                <p>Ремонт холодильников</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech visible">
+                                <p>Ремонт лопат</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech visible">
+                                <p>Ремонт гитар</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+                            <a href='#' class="cardtech visible">
+                                <p>Ремонт кабелей</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech visible">
+                                <p>Ремонт утюгов</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech visible">
+                                <p>Ремонт верстки</p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+
+                            <a href='#' class="cardtech visible">
+                                <p>Ремонт всего </p>
+                                <div class='cardtech__btn'><img src='./img/btn.svg'></div>
+                            </a>
+                        </div>
+                        <button class='more cardtech__more'>Показать все</button>
+                    </div>
+                </div>
+
+                <div class='gradient container__gradient'>
+                    <div class='gradient__title'>Ремонт различных видов брендов</div>
+                </div>
+                <div class='cardblock container__cardblock'>
+                    <div class='swiper-mobile'>
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class="swiper-slide cardprice">
+                                    <div>
+                                        <p>Ремонтные услуги</p>
+                                        <p>Тестирование с выдачей технического заключения</p>
+                                    </div>
+                                    <div>
+                                        <p>Цена</p>
+                                        <p>Бесплатно</p>
+                                    </div>
+                                    <div class="cardprice__toorder">
+                                        <div>
+                                            <p>Cрок</p>
+                                            <p>30-120 минут</p>
+                                        </div>
+                                        <a href='/'><img src='./img/toorder.svg'></a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide cardprice">
+                                    <div>
+                                        <p>Ремонтные услуги</p>
+                                        <p>Замена дисплея</p>
+                                    </div>
+                                    <div>
+                                        <p>Цена</p>
+                                        <p>1000 ₽</p>
+                                    </div>
+                                    <div class="cardprice__toorder">
+                                        <div>
+                                            <p>Cрок</p>
+                                            <p>30-120 минут</p>
+                                        </div>
+                                        <a href='/'><img src='./img/toorder.svg'></a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide cardprice">
+                                    <div>
+                                        <p>Ремонтные услуги</p>
+                                        <p>Замена динамика</p>
+                                    </div>
+                                    <div>
+                                        <p>Цена</p>
+                                        <p>1000 ₽</p>
+                                    </div>
+                                    <div class="cardprice__toorder">
+                                        <div>
+                                            <p>Cрок</p>
+                                            <p>30-120 минут</p>
+                                        </div>
+                                        <a href='/'><img src='./img/toorder.svg'></a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide cardprice">
+                                    <div>
+                                        <p>Ремонтные услуги</p>
+                                        <p>Замена ПО</p>
+                                    </div>
+                                    <div>
+                                        <p>Цена</p>
+                                        <p>1000 ₽</p>
+                                    </div>
+                                    <div class="cardprice__toorder">
+                                        <div>
+                                            <p>Cрок</p>
+                                            <p>30-120 минут</p>
+                                        </div>
+                                        <a href='/'><img src='./img/toorder.svg'></a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide cardprice">
+                                    <div>
+                                        <p>Ремонтные услуги</p>
+                                        <p>Диагностика</p>
+                                    </div>
+                                    <div>
+                                        <p>Цена</p>
+                                        <p>1000 ₽</p>
+                                    </div>
+                                    <div class="cardprice__toorder">
+                                        <div>
+                                            <p>Cрок</p>
+                                            <p>30 минут</p>
+                                        </div>
+                                        <a href='/'><img src='./img/toorder.svg'></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='pricelist container__pricelist'>
+                    <div class="pricelist__title">
+                        <p>Ремонтные услуги</p>
+                        <p>Цена</p>
+                        <p>Срок</p>
+                    </div>
+                    <div class='pricelist__wrapper'>
+                        <div class='pricelist__container'>
+                            <p>Диагностика</p>
+                            <p>Бесплатно</p>
+                            <p>30 минут</p>
+                            <a href='/'><img src='./img/toorder.svg'></a>
+
+                            <p>Замена дисплея</p>
+                            <p>1 000 ₽</p>
+                            <p>30-120 мин</p>
+                            <a href='/'><img src='./img/toorder.svg'></a>
+
+                            <p>Замена полифонического динамика</p>
+                            <p>1 000 ₽</p>
+                            <p>30-120 мин</p>
+                            <a href='/'><img src='./img/toorder.svg'></a>
+
+                            <p>Тестирование с выдачей технического заключения</p>
+                            <p>1 000 ₽</p>
+                            <p>30-120 мин</p>
+                            <a href='/'><img src='./img/toorder.svg'></a>
+
+                            <p>Замена програмного обеспечения</p>
+                            <p>1 000 ₽</p>
+                            <p>30-120 мин</p>
+                            <a href='/'><img src='./img/toorder.svg'></a>
+                        </div>
+                    </div>
+                </div>
+                <div class='textinfo'>
+                    <p class='textinfo__text'>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                    </p>
+                    <a href='/' class='textinfo__offer'>
+                        <p>Получить коммерческое предложение<img src='./img/offer.svg'></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class='rightside'>
+            <button class='button rightside__close'><img src='./img/close.svg'></button>
+            <div class='feedback rightside__feedback'>
+                <h1 class='titleline rightside__titleline'>Обратная связь</h1>
+                <div class='feedback__form'>
+                    <form>
+                        <fieldset>
+                            <input type="text" name="name" placeholder="Имя" class='rightside__forms'>
+                            <input type="tel" name="telephone" placeholder="Телефон" class='rightside__forms'>
+                            <input type="email" name='email' placeholder="Электронная почта" class='rightside__forms'>
+                            <textarea rows="6" cols="50" class='rightside__forms' placeholder="Сообщение"></textarea>
+                        </fieldset>
+                        <div class='submit'>
+                            <p>Нажимая “отправить”, вы даете согласие на
+                                <a href='/'>обработку персональных данных</a> и соглашаетесь с нашей <a href='/'>политикой конфиденциальности</a>
+                            </p>
+                            <input type='submit' class='submit__button' value=''>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class='feedcall rightside__feedcall'>
+                <h1 class='titleline rightside__titleline'>Заказать звонок</h1>
+                <div class='feedcall__form'>
+                    <form>
+                        <fieldset>
+                            <input type="tel" name="telephone" placeholder="Телефон" class='rightside__forms'>
+                        </fieldset>
+                        <div class='submit'>
+                            <p>Нажимая “отправить”, вы даете согласие на
+                                <a href='/'>обработку персональных данных</a> и соглашаетесь с нашей <a href='/'>политикой конфиденциальности</a>
+                            </p>
+                            <input type='submit' class='submit__button' value=''>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class='footer'>
+        <p><span>© 2019 CPSР<span> Разработано командой Apesong</p>
+        <p>Политика конфиденциальности</p>
+        <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+
+ </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

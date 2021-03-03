@@ -1,0 +1,50 @@
+.services {
+    max-width: 1100px;
+    @media (min-width: $w-1119) {
+        margin: 0 auto;
+    }
+    .titleline--body {
+        &:before {
+            margin-right: 12px;
+            @media (min-width: $w-767) {
+                margin-right: 20px;
+            }
+        }
+        @media (min-width: $w-1119) {
+            display: none;
+        }
+    }
+    &__container {
+        display: flex;
+        white-space: nowrap;
+        overflow-x: scroll;
+        margin: 0px 16px 12px 16px;
+        @media (min-width: $w-767) {
+            margin: 0 12px 0 24px;
+        }
+        @media (min-width: $w-1119) {
+            margin: 24px 12px 0 32px;
+            max-width: 1030px;
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        border: 2px solid transparent;
+        border-radius: 6px;
+        padding: 8px 11px 8px 11px;
+        font-weight: 600;
+        font-size: 16px;
+        a {
+            color: $color-important;
+        }
+        &:hover {
+            border: 2px solid $color-borders;
+            background-color: $color-elements;
+            cursor: pointer;
+        }
+    }
+     ::-webkit-scrollbar {
+        width: 0px;
+        background: rgba(255, 255, 255, 0.0);
+    }
+}

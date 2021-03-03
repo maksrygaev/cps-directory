@@ -1,0 +1,13 @@
+.feedcall {
+    display: none;
+    &.rightside__feedcall {
+        margin-top: 80px;
+        @media (min-width: 1119px) {
+            margin-top: 24px;
+        }
+    }
+}
+
+.feedcall-show {
+    display: block;
+}

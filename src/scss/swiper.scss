@@ -1,0 +1,22 @@
+.swiper-mobile {
+    margin-top: 16px;
+    max-width: 1000px;
+    display: block;
+    @media (min-width: $w-767) {
+        display: none;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #7E7E82;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #c2c2c2;
+}
+
+.swiper-wrapper {
+    margin-bottom: 40px;
+}

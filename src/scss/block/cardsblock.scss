@@ -1,0 +1,165 @@
+        .cardblock {
+            &.container__cardblock {
+                margin: 16px;
+                @media (min-width: $w-767) {
+                    margin: 16px 24px 16px 24px;
+                }
+                @media (min-width: $w-1119) {
+                    margin: 16px 32px 16px 32px;
+                }
+            }
+            &__tablet {
+                display: none;
+                @media (min-width: $w-767) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                @media (max-width: $w-1200) {
+                    margin: 0 auto;
+                }
+            }
+            &__tablet-container {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 1050px;
+                justify-content: center;
+                margin: 0 auto;
+                margin-top: 24px;
+                @media (min-width: $w-1050) {
+                    max-width: 1200px;
+                }
+            }
+        }
+        
+        .cardbrand {
+            width: 202px;
+            height: 40px;
+            max-width: 240px;
+            background-color: white;
+            border: 1px solid #EAEAEA;
+            border-radius: 6px;
+            display: flex;
+            padding: 16px;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 16px;
+            @media (min-width: $w-767) {
+                &:not(:nth-child(3n)) {
+                    margin-right: 5px;
+                }
+                @media (min-width: 800px) {
+                    &:not(:nth-child(3n)) {
+                        margin-right: 20px;
+                    }
+                }
+                @media (min-width: $w-1050) {
+                    &:not(:nth-child(5n)) {
+                        margin-right: 20px;
+                    }
+                }
+            }
+            &.visible {
+                display: none;
+                &.show-cardbrand {
+                    display: flex;
+                }
+            }
+            @media(min-width: 1050px) {
+                &:nth-child(-n+8) {
+                    display: flex;
+                }
+            }
+            @media (min-width: 1200px) {
+                &:nth-child(1n+7) {
+                    display: none;
+                }
+            }
+            @media (min-width: 1393px) {
+                &:nth-child(-n+8) {
+                    display: flex;
+                }
+            }
+        }
+        
+        .cardtech {
+            width: 202px;
+            height: 128px;
+            max-width: 240px;
+            background-color: white;
+            border: 1px solid #EAEAEA;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            display: flex;
+            padding: 16px;
+            justify-content: space-between;
+            align-items: flex-start;
+            cursor: pointer;
+            margin-bottom: 16px;
+            &__btn {
+                align-self: flex-end;
+            }
+            @media (min-width: $w-767) {
+                &:not(:nth-child(3n)) {
+                    margin-right: 5px;
+                }
+                @media (min-width: 800px) {
+                    &:not(:nth-child(3n)) {
+                        margin-right: 20px;
+                    }
+                }
+                @media (min-width: $w-1050) {
+                    &:not(:nth-child(5n)) {
+                        margin-right: 20px;
+                    }
+                }
+            }
+            &.visible {
+                display: none;
+                &.show-cardtech {
+                    display: flex;
+                }
+            }
+            @media(min-width: 1050px) {
+                &:nth-child(-n+8) {
+                    display: flex;
+                }
+            }
+            @media (min-width: 1200px) {
+                &:nth-child(1n+7) {
+                    display: none;
+                }
+            }
+            @media (min-width: 1393px) {
+                &:nth-child(-n+8) {
+                    display: flex;
+                }
+            }
+        }
+        
+        .cardprice {
+            width: 240px;
+            height: 180px;
+            border-radius: 6px;
+            border: 1px solid #eaeaea;
+            background-color: #ffffff;
+            color: black;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 16px 16px 16px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p:first-child {
+                color: grey;
+                font-weight: 600;
+                margin-bottom: 6px;
+            }
+            &__toorder {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
